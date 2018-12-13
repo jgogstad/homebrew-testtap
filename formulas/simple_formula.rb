@@ -3,7 +3,7 @@ class Tcloud < Formula
   homepage "https://github.com/Tapad/sbt-homebrew"
 
   url "http://github.com/tapad/app-whateverr.zip"
-  sha256 "058cf60080dba4961e2b566b66f03fdc89f973890ee97db723c4e7fd8027e03b"
+  sha256 "926aab256e741d988ce5682f5ab7a2d5de027be8c52b570b47342e2e9ef9b51f"
 
   depends_on "curl" => "7.56.0"
 
