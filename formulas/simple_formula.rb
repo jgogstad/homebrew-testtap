@@ -5,7 +5,7 @@ class Tcloud < Formula
   @@version = "0.1.0-SNAPSHOT"
 
   url "http://github.com/tapad/tcloud-#{@@version}.zip"
-  sha256 "31e9b8030c414a865ac3f5730b0f6bec3765e8a89924d364e53d2055f409c11b"
+  sha256 "f8478effbe5e4ba110dea4d36d76ea55ca7b2f15e0c0d8195ea88a664a3a017c"
 
   depends_on "curl" => "7.56.0"
 
