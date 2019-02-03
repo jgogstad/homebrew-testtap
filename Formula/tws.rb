@@ -7,11 +7,11 @@ For this part of the workshop, we're not going to use any external storage for o
 
 ```
 $ cd ~/.ivy2/local/com.tapad.workshop/tws/
-$ python -m SimpleHTTPServer
+$ python -m SimpleHTTPServer 8080
 ```
 =end
-  url "https://localhost:8080/0.1.0-SNAPSHOT/tws-0.1.0-SNAPSHOT.zip"
-  sha256 "3b33250623831955d030bf18b26523acd6f50115400765f360a9d5b437bca6f2"
+  url "https://localhost:8080/0.1.0-SNAPSHOT/tws.zip"
+  sha256 "3dba4d4152052597a535d8cce97d04755839e174c167d617b44e4ae72375e3db"
   version "0.1.0-SNAPSHOT"
 
   depends_on "curl" => "7.56.0"
