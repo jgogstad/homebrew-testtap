@@ -15,9 +15,9 @@ class Jgows < Formula
     abort("No credentials found in #{@@credentials_file}")
   end
 
-  url "https://#{username}:#{password}@nexus.tapad.com/repository/releases/com/tapad/workshop/jgows/0.1.8/jgows-0.1.8.zip"
+  url "https://#{username}:#{password}@nexus.tapad.com/repository/releases/com/tapad/workshop/jgows/0.1.9/jgows-0.1.9.zip"
   sha256 "df80d147f2fc18bb1e3db94c9f0a8e72ca642c4784df40bbaa16b4c2b6b69070"
-  version "0.1.8"
+  version "0.1.9"
 
   depends_on "curl" => "7.56.0"
   depends_on "llvm" => :build
@@ -26,7 +26,7 @@ class Jgows < Formula
   depends_on "libidn"
 
   def install
-    system "make", "VERSION=0.1.8", "BUILDPATH=#{buildpath}", "CREDENTIALS=#{@@credentials_file}"
+    system "make", "VERSION=0.1.9", "BUILDPATH=#{buildpath}", "CREDENTIALS=#{@@credentials_file}"
     bin.install "app"
   end
 
