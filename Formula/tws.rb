@@ -10,8 +10,8 @@ $ cd ~/.ivy2/local/com.tapad.workshop/tws/
 $ python -m SimpleHTTPServer 8080
 ```
 =end
-  url "http://localhost:8080/0.1.0-SNAPSHOT/tws.zip"
-  sha256 "5d61b5bf5d1ca2649c93b4a277fea8afc3d4f0bc1787d5ab16805a81d06c5f26"
+  url "http://localhost:8080/0.1.0-SNAPSHOT/zips/tws.zip"
+  sha256 "f3918bf16f04406b505a8a77c65d19d66e99cd1515f1c78ad106620cd6302a16"
   version "0.1.0-SNAPSHOT"
 
   depends_on "curl" => "7.56.0"
