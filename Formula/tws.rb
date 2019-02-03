@@ -11,7 +11,7 @@ $ python -m SimpleHTTPServer 8080
 ```
 =end
   url "http://localhost:8080/0.1.0-SNAPSHOT/zips/tws.zip"
-  sha256 "109ddd1559b03561cfff77c1793fb3ba42a20ec354ea9266541dc4663d6665ab"
+  sha256 "e4aa941e5685fb7cfd22dab32f9d6fa2e572e923a75e3676d00b3dc3b25d006f"
   version "0.1.0-SNAPSHOT"
 
   depends_on "curl" => "7.56.0"
