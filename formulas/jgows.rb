@@ -18,14 +18,14 @@ class Jgows < Formula
   username_encoded = URI.encode(username)
   password_encoded = URI.encode(password)
 
-  url "https://#{username}:#{password}@nexus.tapad.com/repository/releases/com/tapad/workshop/jgows/0.1.4/jgows-0.1.4.zip"
-  sha256 "6c3768e937594f2d7a4afda9ecf88e89664f2399968ec3b922c4ad4bdd422d92"
-  version "0.1.4"
+  url "https://#{username}:#{password}@nexus.tapad.com/repository/releases/com/tapad/workshop/jgows/0.1.5/jgows-0.1.5.zip"
+  sha256 "06b7bae0b46e961321940f73bf83a8697f03c7632982c98bb3162668ecadc7d9"
+  version "0.1.5"
 
   depends_on "curl" => "7.56.0"
 
   def install
-    system "make", "VERSION=0.1.4", "BUILDPATH=#{buildpath}"
+    system "make", "VERSION=0.1.5", "BUILDPATH=#{buildpath}", "CREDENTIALS=#{credentials_file]}"
     bin.install "app"
   end
 
