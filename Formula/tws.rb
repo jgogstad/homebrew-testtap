@@ -34,7 +34,4 @@ class Tws < Formula
   test do
     system "#{bin}/tws", "--version"
   end
-
-  caveats "If you're on Linux, please install re2, unwind and gc for your distribution. See https://github.com/scala-native/scala-native/blob/master/docs/user/setup.rst"
-
 end
