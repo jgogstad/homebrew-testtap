@@ -32,7 +32,7 @@ class Tws < Formula
   end
 
   bottle do
-    root_url "http://localhost:8080"
+    root_url "https://#{username}:#{password}@nexus.tapad.com/repository/releases/com/tapad/workshop/tws/0.0.10/"
     cellar :any
     sha256 "2bb85c45f2e017cfcc931160a8b7a2e832a7cab11db8b63e2d3611c82348d3fb" => :high_sierra
   end
