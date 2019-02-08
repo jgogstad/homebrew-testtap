@@ -15,10 +15,10 @@ class Tws < Formula
     abort("No credentials found in #{@@credentials_file}")
   end
 
-  url "https://#{username}:#{password}@nexus.tapad.com/repository/releases/com/tapad/workshop/tws/0.0.4/tws-0.0.4.zip"
+  url "https://#{username}:#{password}@nexus.tapad.com/repository/releases/com/tapad/workshop/tws/0.0.6/tws-0.0.6.zip"
 
-  sha256 "089f5b745e247c0bd3c49a65037853013312aa48196ceab35669fc5fece3cf19"
-  version "0.0.4"
+  sha256 "32417b5ec31c0735cfb8c6e93067176c453b400ca03f9fec4cc851cf2e300669"
+  version "0.0.6"
 
   depends_on "curl" => "7.56.0"
   depends_on "llvm" => :build
@@ -27,7 +27,7 @@ class Tws < Formula
   depends_on "libidn"
 
   def install
-    system "make", "VERSION=0.0.4", "BUILDPATH=#{buildpath}", "CREDENTIALS=#{@@credentials_file}"
+    system "make", "VERSION=0.0.6", "BUILDPATH=#{buildpath}", "CREDENTIALS=#{@@credentials_file}"
     bin.install "tws"
   end
 
