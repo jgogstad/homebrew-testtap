@@ -34,6 +34,7 @@ class Tws < Formula
   bottle do
     root_url "https://#{username}:#{password}@nexus.tapad.com/repository/releases/com/tapad/workshop/tws/0.0.11/"
     cellar :any
-    sha256 "2bb85c45f2e017cfcc931160a8b7a2e832a7cab11db8b63e2d3611c82348d3fb" => :high_sierra
+    rebuild 1
+    sha256 "d5a77747fe7226494b9f789901d9a56123dcbeba4307d1af26db214707ab0bd3" => :high_sierra
   end
 end
