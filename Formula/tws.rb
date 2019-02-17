@@ -17,6 +17,7 @@ class Tws < Formula
   depends_on "llvm" => :build
   depends_on "curl"
   depends_on "libidn"
+  depends_on "re2"
 
   def install
       system "make", "VERSION=0.5.0", "BUILDPATH=#{buildpath}"
