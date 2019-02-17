@@ -1,5 +1,5 @@
 class Tws < Formula
-  desc "Scala Native Workshop for tws"
+  desc "SScala Native Workshop for tws"
   homepage "https://github.com/Tapad/scala-native-workshop"
 
   url "http://localhost:8080/tws/0.0.12/zips/tws.zip"
