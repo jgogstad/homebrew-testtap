@@ -2,24 +2,18 @@ class Tws < Formula
   desc "Scala Native Workshop for tws"
   homepage "https://github.com/Tapad/scala-native-workshop"
 
-  url "http://localhost:8080/tws/0.0.12/zips/tws.zip"
+  url "http://localhost:8080/tws/0.0.15-0-dbe54f71-20190217-1437/zips/tws.zip"
 
-  sha256 "934765e48986260925a8b74f9b251c0f3359531703ff157549973cc78575b5d4"
-  version "0.0.12"
+  version "0.0.15-0-dbe54f71-20190217-1437"
+  sha256 "06d0ced4221678b1118bbf0fb28b5f209595cce9e815476a7f5a0825f4f6920b"
 
-  bottle do
-    root_url "https://dl.bintray.com/jgogstadorg/testtap-bottles"
-    cellar :any
-    sha256 "ef80eaf2348146b933fa81c6808b1cef49d15d93ff542fb368ecee9cafac7beb" => :high_sierra
-  end
-
+  depends_on "bdw-gc" => :build
+  depends_on "llvm" => :build
   depends_on "curl"
   depends_on "libidn"
-  depends_on "llvm" => :build
-  depends_on "bdw-gc" => :build
 
   def install
-      system "make", "VERSION=0.0.12", "BUILDPATH=#{buildpath}"
+      system "make", "VERSION=0.0.15-0-dbe54f71-20190217-1437", "BUILDPATH=#{buildpath}"
       bin.install "tws"
   end
 end
